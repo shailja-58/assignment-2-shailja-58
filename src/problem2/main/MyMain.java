@@ -25,7 +25,7 @@ public class MyMain {
     obj.insert(root , 65);
     t.printPreorder(root);
     System.out.println();
-    t.printPostorder(root)
+    t.printPostorder(root);
 
 
 
