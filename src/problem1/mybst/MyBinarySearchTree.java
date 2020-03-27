@@ -12,5 +12,8 @@ import javax.swing.tree.TreeNode;
 public class MyBinarySearchTree
 {
     static Queue<TreeNode> q;
+    public TreeNode insert(TreeNode root, int x) {
+        if (root == null)
+            return new TreeNode(x);
+    }
 }
-
