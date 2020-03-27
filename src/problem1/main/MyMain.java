@@ -10,9 +10,8 @@ package problem1.main;
 import problem1.mybst.MyBinarySearchTree;
 
 import javax.swing.tree.TreeNode;
-import java.util.Enumeration;
 
-public abstract class MyMain {
+public class MyMain {
     public static void main(String [] args) {
         MyBinarySearchTree obj = new MyBinarySearchTree();
         TreeNode root;
