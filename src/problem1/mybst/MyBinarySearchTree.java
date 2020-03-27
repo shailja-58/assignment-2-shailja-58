@@ -25,6 +25,11 @@ public class MyBinarySearchTree
         if (root.getLeft() != null) {
             inorderRec(root.getLeft());
             System.out.println(root.getData());
-            inorderRec(root.getRight());
-        }
+            inorderRec(root.getRight()); }
+
+
+    public void countNodeWithOutLeftChild(TreeNode root) {
+        if (root == null)
+                return;
+
 }
