@@ -41,7 +41,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "name='" + name + '\'' +
+        return "name:'" + name + '\'' +
                 ", rollno=" + rollno +
                 ", backlog=" + backlog +
                 ", apperingcount=" + apperingcount
