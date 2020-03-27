@@ -60,6 +60,8 @@ public class MyBinarySearchTree
             if (temp != null) {
                 System.out.print(temp.getData() + " ");
                 while (q.peek() != null) {
+                    if (temp.getLeft() != null)
+                        q.add(temp.getLeft());
 
 
                 }
