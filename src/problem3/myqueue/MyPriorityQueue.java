@@ -15,6 +15,9 @@ public class MyPriorityQueue {
         this.front = null;
         this.rear = null;
     }
+    public boolean isEmpty() {
+        return front == null;
+    }
     public void insert(int data, int priority) {
         Node n = new Node(data, priority);
         if (isEmpty() || n.getPriority() < front.getPriority()) {
