@@ -40,8 +40,10 @@ public class MyBinarySearchTree
              if (temp == null) {
                  break;
              }
-            if (temp.getLeft() == null)
+             if (temp.getLeft() == null)
                 count++;
+             if (temp.getLeft() != null)
+                queue.add(temp.getLeft());
 
 
         }
