@@ -34,6 +34,12 @@ public class MyBinarySearchTree
         Queue<TreeNode> queue = new LinkedList<TreeNode>();
         queue.add(root);
 
+        int count = 0;
+        while (queue != null) {
+             TreeNode temp = queue.poll();
+             if (temp == null) {
+                 break;
+             }
 
 
         }
