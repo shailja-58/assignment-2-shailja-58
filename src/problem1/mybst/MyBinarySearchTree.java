@@ -54,5 +54,10 @@ public class MyBinarySearchTree
             return;
         q.add(root);
         q.add(null);
+        while (q.size() > 0) {
+            TreeNode temp = q.peek();
 
-        }
+            if (temp != null) {
+                System.out.print(temp.getData() + " ");
+
+            }
