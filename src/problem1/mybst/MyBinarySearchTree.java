@@ -52,6 +52,7 @@ public class MyBinarySearchTree
     public void printLeftTree(TreeNode root) {
         if (root == null)
             return;
-
+        q.add(root);
+        q.add(null);
 
         }
