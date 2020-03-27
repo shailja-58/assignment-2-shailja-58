@@ -64,6 +64,12 @@ public class MyBinarySearchTree
                         q.add(temp.getLeft());
                     if (temp.getRight() != null)
                         q.add(temp.getRight());
+                    q.remove();
+
+                    temp = q.peek();
+                }
+                q.add(null);
+            }
 
 
 
