@@ -1,6 +1,6 @@
 package problem1.node;
 
-class TreeNode{
+public class TreeNode{
     private int data;
     private TreeNode left;
     private TreeNode right;

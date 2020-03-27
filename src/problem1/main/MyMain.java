@@ -8,14 +8,13 @@ package problem1.main;
 // executable class
 
 import problem1.mybst.MyBinarySearchTree;
+import problem1.node.TreeNode;
 
-import javax.swing.tree.TreeNode;
-
-public class MyMain {
+public abstract class MyMain {
     public static void main(String [] args) {
         MyBinarySearchTree obj = new MyBinarySearchTree();
         TreeNode root;
-        root = new TreeNode(8);
+        root = new TreeNode(7);
         obj.insert(root , 6);
         obj.insert(root , 3);
         obj.insert(root , 5);
@@ -23,7 +22,6 @@ public class MyMain {
         obj.insert(root , 9);
         obj.insert(root , 2);
         obj.insert(root , 1);
-        obj.insert(root , 11);
         obj.leftView(root);
 
         }

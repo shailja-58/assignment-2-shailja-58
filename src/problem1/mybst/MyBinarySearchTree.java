@@ -80,28 +80,13 @@ public class MyBinarySearchTree {
 
         while (q.size() > 0) {
             TreeNode temp = q.peek();
-
             if (temp != null) {
-
-                // Prints first node
-                // of each level
                 System.out.print(temp.getData() + " ");
-
-                // add children of all nodes at
-                // current level
                 while (q.peek() != null) {
-
-                    // If left child is present
-                    // add into queue
                     if (temp.getLeft() != null)
                         q.add(temp.getLeft());
-
-                    // If right child is present
-                    // add into queue
                     if (temp.getRight() != null)
                         q.add(temp.getRight());
-
-                    // remove the current node
                     q.remove();
 
                     temp = q.peek();
@@ -109,15 +94,11 @@ public class MyBinarySearchTree {
                 q.add(null);
             }
 
-            // remove the delimiter of
-            // the previous level
             q.remove();
         }
     }
 
     public void leftView(TreeNode root) {
-        // Queue to store all
-        // the nodes of the tree
         q = new LinkedList<TreeNode>();
 
         printLeftTree(root);
