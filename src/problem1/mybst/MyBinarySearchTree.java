@@ -30,6 +30,10 @@ public class MyBinarySearchTree
 
     public void countNodeWithOutLeftChild(TreeNode root) {
         if (root == null)
-                return;
+            return;
+        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        queue.add(root);
 
-}
+
+
+        }
