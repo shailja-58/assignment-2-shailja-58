@@ -70,6 +70,9 @@ public class MyBinarySearchTree
                 }
                 q.add(null);
             }
+            q.remove();
+        }
+    }
 
 
 
