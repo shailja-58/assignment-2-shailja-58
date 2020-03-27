@@ -7,6 +7,8 @@
 package problem4.myqueue;
 // to create queue to store pre - order successor
 
+import problem1.node.TreeNode;
+
 public class MyQueue {
     private Node front, end, tmp;
     private int size;
@@ -75,5 +77,14 @@ public class MyQueue {
             tmp.setNext(node);
             tmp = front;
         }
+    }
+    public void preOrder(TreeNode node) {
+        if (node == null) {
+            return;
+        }
+
+        enqueue(new Node(node));
+        preOrder(node.getLeft());
+        preOrder(node.getRight());
     }
 }
